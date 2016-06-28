@@ -16,5 +16,10 @@ module Webui
 
       code
     end
+
+    # @param [String] source
+    def webui_module_path(source)
+      javascript_path(source).sub('.js', '')
+    end
   end
 end
